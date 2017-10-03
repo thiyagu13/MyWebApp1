@@ -23,7 +23,7 @@ public class BaseController {
 
 		// Spring uses InternalResourceViewResolver and return back index.jsp
 		return VIEW_INDEX;
-
+        
 	}
 
 	@RequestMapping(value = "/{name}", method = RequestMethod.GET)
@@ -32,6 +32,7 @@ public class BaseController {
 		model.addAttribute("message", "Welcome " + name);
 		model.addAttribute("counter", ++counter);
 		logger.debug("[welcomeName] counter : {}", counter);
+		System.out.println("Test");
 		return VIEW_INDEX;
 
 	}
