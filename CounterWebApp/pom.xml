@@ -110,12 +110,9 @@
 					<path>/CounterWebApp</path>
 				</configuration>
 			</plugin>
-<plugin>            
-  <groupId>org.apache.maven.plugins</groupId>
+<plugin>
   <artifactId>maven-war-plugin</artifactId>
-  <configuration>
-    <webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
-  </configuration>
+  <version>3.0.0</version>
 </plugin>
 		</plugins>
 
